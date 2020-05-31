@@ -1,9 +1,9 @@
-version:"3"
+version: "3"
 services:
-  music:
-    image:openjdk
+  lyg:
+    image: openjdk
     ports:
-      -"3201:8080"
+      - "3201:8080"
     volumes:
       - $PWD/target:/opt
-    commond: java -jar /opt/soft2group3-0.0.1-SNAPSHOT.jar
+    command: java -jar /opt/soft2group3-0.0.1-SNAPSHOT.jar
