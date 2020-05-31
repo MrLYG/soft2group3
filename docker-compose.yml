@@ -3,7 +3,7 @@ services:
   lyg:
     image: openjdk
     ports:
-      - "3201:8080"
+      - "3200:8080"
     volumes:
       - $PWD/target:/opt
     command: java -jar /opt/soft2group3-0.0.1-SNAPSHOT.jar
