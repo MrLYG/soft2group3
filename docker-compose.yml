@@ -1,6 +1,7 @@
 version: "3"
 services:
   lyg:
+    container_name: soft2group3
     image: openjdk
     ports:
       - "3200:8080"
