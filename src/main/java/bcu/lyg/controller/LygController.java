@@ -14,7 +14,7 @@ public class LygController {
 	@RequestMapping(value="/albums")
 	public List<Album> findAllAlbum(){
 		List<Album> albums=new ArrayList<>();
-		for (int i = 0; i < 107; i++) {
+		for (int i = 0; i < 109; i++) {
 			Album a = new Album();
 			a.setId(i);
 			a.setName("album"+i);
