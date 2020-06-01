@@ -1,6 +1,5 @@
 #!/bin/bash
-
 git pull
 mvn clean package
 docker-compose down
-docker-compose -d
+docker-compose up -d
