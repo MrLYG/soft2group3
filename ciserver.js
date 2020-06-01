@@ -1,14 +1,20 @@
 const http=require('http')
 const child=require('child_process')
 
+var exec = require('child_process').exec
 var server=http.createServer()
 server.on('request',function(req,res){
 	res.end("success!!")
 	console.log("execFile")
-	child.execFile('/soft2group3/cibuild.sh',function(error,stdout,stderr){
-		console.log((stdout))
-		console.log('execFilefinish')
-	})
+	var ls = exec('. cibuild.sh', function (error, stdout, stderr) {
+		  if (error) {
+		    console.log(error.stack);
+		    console.log('Error code: ' + error.code);
+		  }
+		  console.log('Child Process STDOUT: ' + stdout);
+		});
+	
+	
 })
 
 server.listen(3203,function(err){
