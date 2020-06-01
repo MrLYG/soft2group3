@@ -6,7 +6,7 @@ var server=http.createServer()
 server.on('request',function(req,res){
 	res.end("success!!")
 	console.log("execFile")
-	var ls = exec('. cibuild.sh', function (error, stdout, stderr) {
+	var ls = exec('bash cibuild.sh', function (error, stdout, stderr) {
 		  if (error) {
 		    console.log(error.stack);
 		    console.log('Error code: ' + error.code);
