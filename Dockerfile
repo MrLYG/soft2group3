@@ -1,0 +1,3 @@
+FROM soft2group3
+MAINTAINER lyg
+VOLUME /opt
