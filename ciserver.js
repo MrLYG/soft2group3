@@ -5,8 +5,9 @@ var server=http.createServer()
 server.on('request',function(req,res){
 	res.end("success!!")
 	console.log("execFile")
-	child.execFile('./cibuild.sh',function(error,stdout,stderr){
+	child.execFile('/soft2group3/cibuild.sh',function(error,stdout,stderr){
 		console.log((stdout))
+		console.log('execFilefinish')
 	})
 })
 
