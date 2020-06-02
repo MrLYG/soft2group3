@@ -18,6 +18,8 @@ public class LygController {
 			Album a = new Album();
 			a.setId(i);
 			a.setName("album"+i);
+			a.setImagePath("http://imagepath");
+			a.setAudioPath("http://audioPath");
 			albums.add(a);
 		}
 		
